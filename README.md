@@ -22,11 +22,20 @@ pip freeze > requirements-frozen.txt
 
 ## Run
 
-- `Run tests`: python -m pytest
+Run tests: 
+```bash
+python -m pytest
+```
 
-- `Run code style check`: ruff check src tests
+Run code style check: 
+```bash
+ruff check src tests
+```
 
-- `Generate environment report`: python src/env_check.py > results/environment_report.txt
+Generate environment report: 
+```bash
+python src/env_check.py > results/environment_report.txt
+```
 
 ## What is in this repository
 
@@ -64,4 +73,4 @@ pip freeze > requirements-frozen.txt
 
 ## What is not committed, and why
 
-The .venv/ and results/ folders are ignored by Git via .gitignore. Committing .venv/ would push platform-specific binaries that break on other machines, while committing results/ would clutter version history with generated artefacts that should always be reproduced from source code.
+The `.venv/` and `results/` folders are ignored by Git via `.gitignore`. Committing `.venv/` would push platform-specific binaries that break on other machines, while committing `results/` would clutter version history with generated artefacts that should always be reproduced from source code.
