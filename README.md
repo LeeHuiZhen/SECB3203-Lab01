@@ -4,57 +4,61 @@ Student: Lee Hui Zhen, A24CS0259
 
 ## Setup
 
-Windows (Command Prompt):
+### Windows (Command Prompt):
 python -m venv .venv
 .venv\Scripts\activate.bat
 python -m pip install -r requirements.txt
 pip freeze > requirements-frozen.txt
 
-Linux / macOS:
+
+### Linux / macOS:
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 pip freeze > requirements-frozen.txt
 
+
 ## Run
 
 Run tests: python -m pytest
+
 Run code style check: ruff check src tests
+
 Generate environment report: python src/env_check.py > results/environment_report.txt
 
 ## What is in this repository
 
-src/: Source code directory containing modular Python programs.
+- src/: Source code directory containing modular Python programs.
 
-tests/: Automated testing directory containing visible and custom test suites.
+- tests/: Automated testing directory containing visible and custom test suites.
 
-data/: Read-only directory containing synthetic laboratory datasets.
+- data/: Read-only directory containing synthetic laboratory datasets.
 
-results/: Output directory for generated artifacts and reports.
+- results/: Output directory for generated artifacts and reports.
 
-src/env_check.py: Module inspecting Python runtime, OS metadata, and installed package versions.
+- src/env_check.py: Module inspecting Python runtime, OS metadata, and installed package versions.
 
-src/basics.py: Module implementing GC percentage calculations, report string formatting, and base count parsing.
+- src/basics.py: Module implementing GC percentage calculations, report string formatting, and base count parsing.
 
-tests/test_visible.py: Provided unit tests checking baseline function contracts.
+- tests/test_visible.py: Provided unit tests checking baseline function contracts.
 
-tests/test_lab01_own.py: Custom unit tests covering boundary conditions, zero totals, and invalid inputs.
+- tests/test_lab01_own.py: Custom unit tests covering boundary conditions, zero totals, and invalid inputs.
 
-data/qc_records.csv: Read-only synthetic laboratory quality control records.
+- data/qc_records.csv: Read-only synthetic laboratory quality control records.
 
-results/environment_report.txt: Generated text file recording verified runtime environment versions.
+- results/environment_report.txt: Generated text file recording verified runtime environment versions.
 
-requirements.txt: Specified list of required project dependencies.
+- requirements.txt: Specified list of required project dependencies.
 
-requirements-frozen.txt: Pinned snapshot of exact package versions installed in the virtual environment.
+- requirements-frozen.txt: Pinned snapshot of exact package versions installed in the virtual environment.
 
-pytest.ini: Test runner configuration setting discovery paths and pythonpath.
+- pytest.ini: Test runner configuration setting discovery paths and pythonpath.
 
-.gitignore: Rules excluding virtual environments, caches, and generated artifacts from Git.
+- .gitignore: Rules excluding virtual environments, caches, and generated artifacts from Git.
 
-AI_USE_LOG.md: Interaction log documenting generative AI usage and verification under course policy.
+- AI_USE_LOG.md: Interaction log documenting generative AI usage and verification under course policy.
 
-README.md: Project documentation detailing setup, run commands, layout, and ignored files.
+- README.md: Project documentation detailing setup, run commands, layout, and ignored files.
 
 ## What is not committed, and why
 
